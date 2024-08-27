@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prayas Computer Services, Solapur</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <h1>Prayas Computer Services, Solapur</h1>
-        <p>Your one-stop solution for all hardware and software needs</p>
+        <div class="container">
+            <img src="C:\Users\Admin\Downloads\Cyan Modern Professional Technology Company Logo (2).png" alt="Prayas Computer Services Logo" class="logo">
+            <h1>Prayas Computer Services, Solapur</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
-
-    <main>
-        <section id="home" class="hero-section">
-            <h1>Welcome to Prayas Computer Services</h1>
-            <p>We provide the best hardware and software solutions for your needs</p>
-        </section>
-
-        <section id="services" class="services-section">
-            <h2>Our Services</h2>
-            <div class="services">
-                <div class="service">
-                    <img src="data:image/png;base64,[BASE64_STRING_FOR_HARDWARE_IMAGE]" alt="Hardware Solutions">
-                    <h3>Hardware Solutions</h3>
-                    <p>Repairs, upgrades, and maintenance for all laptop models.</p>
-                </div>
-                <div class="service">
-                    <img src="data:image/png;base64,[BASE64_STRING_FOR_SOFTWARE_IMAGE]" alt="Software Solutions">
-                    <h3>Software Solutions</h3>
-                    <p>Installation, troubleshooting, and software support.</p>
-                </div>
-                <div class="service">
-                    <img src="data:image/png;base64,[BASE64_STRING_FOR_SUPPORT_IMAGE]" alt="Customer Support">
-                    <h3>Customer Support</h3>
-                    <p>24/7 support to ensure your devices are running smoothly.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <h2>Contact Us</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
+    
+    <section id="home" class="home-section">
+        <h2>Welcome to Prayas Computer Services</h2>
+        <p>Your trusted partner for hardware and software solutions.</p>
+    </section>
+    
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Hardware Solutions</h3>
+            <p>We provide comprehensive hardware solutions for laptops including repairs, upgrades, and replacements.</p>
+        </div>
+        <div class="service">
+            <h3>Software Solutions</h3>
+            <p>Expert software support and troubleshooting for all your laptop needs, from installations to malware removal.</p>
+        </div>
+    </section>
+    
+    <section id="support" class="support-section">
+        <h2>Customer Support</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
     <footer>
-        <p>&copy; 2024 Prayas Computer Services, Solapur
+        <p>&copy; 2024 Prayas Computer Services, Solapur. All rights reserved.</p>
+    </footer>
+</body>
+</html>
