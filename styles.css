@@ -1,129 +1,151 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f5d76e, #e74c3c, #8e44ad);
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header Styles */
 header {
-    background-color: #8e44ad;
-    color: white;
-    padding: 20px;
+    background: linear-gradient(135deg, #ffeb3b, #9c27b0, #d32f2f);
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #e74c3c;
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-nav a {
-    color: white;
-    padding: 15px;
+header .logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
-nav a:hover {
-    background-color: #8e44ad;
-}
-
-main {
-    padding: 20px;
-}
-
-.hero-section {
-    background-color: #f5d76e;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.hero-section h1 {
-    margin: 0;
-    font-size: 36px;
-    color: #333;
-}
-
-.services-section {
-    margin: 40px 0;
-    text-align: center;
-}
-
-.services-section h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #333;
-}
-
-.services {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.service {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    text-align: center;
-}
-
-.service img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.contact-section {
-    background-color: #8e44ad;
-    color: white;
+/* Home Section */
+.home-section {
+    background: #f5f5f5;
     padding: 40px 20px;
     text-align: center;
 }
 
-.contact-section h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
+.home-section h2 {
+    margin-top: 0;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.home-section .section-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
+/* Services Section */
+.services-section {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    margin-top: 0;
+}
+
+.services-section .service {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.services-section .service-image {
     width: 100%;
     max-width: 400px;
-    border-radius: 4px;
-    border: none;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #c0392b;
-}
-
-footer {
-    background-color: #333;
-    color: white;
+/* Support Section */
+.support-section {
+    background: #eee;
+    padding: 40px 20px;
     text-align: center;
+}
+
+.support-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.support-section form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.support-section form input,
+.support-section form textarea {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.support-section form button {
+    background-color: #9c27b0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.support-section form button:hover {
+    background-color: #7b1fa2;
+}
+
+/* Footer Styles */
+footer {
+    background: #9c27b0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
